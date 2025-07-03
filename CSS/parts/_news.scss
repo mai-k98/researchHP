@@ -1,0 +1,130 @@
+#news-page {
+    margin-top: 150px;
+
+    .news-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+
+
+        .article {
+            background-color: white;
+            width: auto;
+            height: 419px;
+            padding-inline: 20px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 5px 5px rgba(17, 17, 26, 0.157);
+
+            a {
+                color: black;
+
+                img {
+                    margin-block: 5px;
+                }
+
+
+
+                .article-title,
+                .date {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                .text {
+                    font-size: 16px;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+
+    .page-btn {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        margin-block: 30px;
+
+        .page01,
+        .page02 {
+
+            display: flex;
+            align-items: center;
+
+            padding-inline: 20px;
+
+            position: relative;
+            color: black;
+
+            font-size: 20px;
+
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                border-bottom: solid 2px gray;
+
+            }
+        }
+
+        .previous,
+        .top,
+        .next {
+            margin-top: 100px;
+
+            display: flex;
+            align-items: center;
+
+            padding-inline: 20px;
+
+            position: relative;
+            color: black;
+
+            font-size: 20px;
+
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                border-bottom: solid 2px gray;
+
+            }
+        }
+    }
+
+    .news-post {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        img {
+            padding: 30px;
+        }
+
+        .post-title {
+            font-size: 48px;
+        }
+
+        .post-date {
+            font-size: 36px;
+        }
+
+        .post-detail {
+            font-size: 24px;
+        }
+
+    }
+
+
+}
+
+.post-thumb {
+    width: 100%;
+    height: auto;
+}

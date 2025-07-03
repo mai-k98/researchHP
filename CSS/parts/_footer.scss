@@ -1,0 +1,29 @@
+@use "mixin" as m;
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    .footer-tag {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        li{
+            list-style: disc;
+            line-height: 3;
+            a{
+
+                color: white;
+            }
+        }
+    }
+    .footercopy{
+        text-align: center;
+        font-size: 14px;
+        padding-block: 50px;
+    }
+}

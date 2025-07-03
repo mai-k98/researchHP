@@ -1,0 +1,167 @@
+@use "mixin" as m;
+
+header {
+    z-index: 900;
+    background-color: #171515b3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+
+    &::after {
+        position: fixed;
+        z-index: 100;
+        content: "";
+        width: 100%;
+        height: 120px;
+        background-color: #171515b3;
+
+    }
+
+    h1 {
+        position: relative;
+        z-index: 900;
+        width: 150px;
+        height: auto;
+    }
+
+    nav {
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background-color: #363e45;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 150px;
+        padding-inline: 100px;
+        transition: all 0.5s;
+        visibility: hidden;
+        opacity: 0;
+
+
+
+        .menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+
+            @include m.sp {
+                grid-template-columns: 1fr;
+            }
+
+
+            li {
+                align-items: center;
+
+                a {
+                    color: white;
+
+                }
+
+
+
+            }
+
+            .about {
+
+                .about-labmember,
+                .about-research {
+                    opacity: 0;
+                    visibility: hidden;
+
+                }
+
+                &:hover .about-labmember,
+                &:hover .about-research {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .sns {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            li {
+                width: 80px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+
+    }
+
+    .hamburger-btn {
+        width: 60px;
+        height: 60px;
+        position: relative;
+
+        cursor: pointer;
+        z-index: 200;
+
+        span {
+            display: block;
+
+            height: 2px;
+            background-color: white;
+            position: absolute;
+
+            &:nth-child(1) {
+                top: 25%;
+                width: 100%;
+                transition: all 0.5s;
+
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+                width: 80%;
+                transition: all 0.5s;
+
+            }
+        }
+    }
+
+
+}
+
+.open {
+    .hamburger-btn {
+        span {
+            background-color: white;
+
+            &:nth-child(1) {
+                top: 50%;
+                transform: rotate(135deg);
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+                width: 100%;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+
+    nav {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+}
