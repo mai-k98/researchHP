@@ -41,7 +41,7 @@
         }
 
         @include m.sp {
-            top: 500px;
+            top: 300px;
             left: 20px;
         }
 
@@ -112,7 +112,7 @@
         .article {
             background-color: white;
             width: auto;
-            height: 419px;
+            height: auto;
             padding-inline: 20px;
             margin-bottom: 10px;
             box-shadow: 0px 0px 5px 5px rgba(17, 17, 26, 0.157);
@@ -136,6 +136,7 @@
 
                 .text {
                     font-size: 16px;
+                    margin-bottom: 30px;
                 }
 
             }
