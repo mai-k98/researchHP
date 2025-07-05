@@ -53,7 +53,8 @@ fadeIn(); // 初回呼び出しも忘れずに
       settings: {
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: "10%",
+        centerPadding: "5%",
+        dots: false,
       }
     }]
   });
