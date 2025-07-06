@@ -41,7 +41,7 @@
         }
 
         @include m.sp {
-            top: 300px;
+            top: 50%;
             left: 20px;
         }
 
@@ -305,6 +305,9 @@
 
             display: flex;
             justify-content: space-between;
+            @include m.sp{
+                flex-direction: column;
+            }
 
             .about-btn {
                 display: flex;
@@ -378,8 +381,10 @@
                 color: white;
                 text-align: center;
 
+                padding-inline: 5%;
+
                 img {
-                    padding-inline: 10%;
+                    
                     padding-block: 20%;
                 }
 
