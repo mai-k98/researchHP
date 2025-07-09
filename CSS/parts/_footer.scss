@@ -7,6 +7,12 @@
     .footer-tag {
         display: flex;
         justify-content: space-between;
+        //added 25.7.6
+        @include m.sp{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         .logo {
             width: 150px;
