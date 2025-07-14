@@ -205,9 +205,8 @@ header nav .sns {
 }
 @media screen and (max-width: 480px) {
   header nav .sns {
-    gap: 10px;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 50px;
   }
 }
 header nav .sns li {
