@@ -1,3 +1,5 @@
+@use "mixin" as m;
+
 #news-page {
     margin-top: 150px;
 
@@ -5,8 +7,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
+        @include m.tab{
+            grid-template-columns: 1fr 1fr;
+        }
+        @include m.sp{
+            grid-template-columns: 1fr;
+        }
 
-
+        
         .article {
             background-color: white;
             width: auto;
