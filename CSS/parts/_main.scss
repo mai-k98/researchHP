@@ -41,6 +41,7 @@
         }
 
         @include m.sp {
+            //changed top px 25.7.5
             top: 70%;
             left: 20px;
         }
@@ -72,8 +73,8 @@
             transform: rotate(-45deg);
         }
 
-        &:hover{
-            transform: scale( 1.1,1.1 );
+        &:hover {
+            transform: scale(1.1, 1.1);
         }
 
     }
@@ -112,6 +113,7 @@
         .article {
             background-color: white;
             width: auto;
+            //changed hight to auto 25.7.5
             height: auto;
             padding-inline: 20px;
             margin-bottom: 10px;
@@ -123,7 +125,8 @@
                 img {
                     margin-block: 5px;
                 }
-                .post-thumb{
+
+                .post-thumb {
                     width: 100%;
                     height: auto;
                 }
@@ -136,6 +139,7 @@
 
                 .text {
                     font-size: 16px;
+                    //changed put margin-bottom 25.7.5
                     margin-bottom: 30px;
                 }
 
@@ -199,8 +203,8 @@
         }
 
         &:hover {
-                transform: scale( 1.1, 1.1 );
-            }
+            transform: scale(1.1, 1.1);
+        }
     }
 }
 
@@ -217,7 +221,7 @@
     .research-text {
 
         max-width: 600px;
-        height: 750px;
+        height: 600px;
         background-color: #b5b2b287;
         position: relative;
 
@@ -232,6 +236,10 @@
             position: absolute;
             top: 50%;
             right: 50%;
+
+            @include m.sp {
+                right: 30%;
+            }
 
             @include m.sp {
                 top: 80%;
@@ -273,7 +281,7 @@
             }
 
             &:hover {
-                transform: scale( 1.1, 1.1 );
+                transform: scale(1.1, 1.1);
             }
         }
     }
@@ -305,7 +313,9 @@
 
             display: flex;
             justify-content: space-between;
-            @include m.sp{
+
+            //added 25.7.6
+            @include m.sp {
                 flex-direction: column;
             }
 
@@ -322,6 +332,10 @@
 
                 width: 400px;
                 height: 90px;
+
+                @include m.sp {
+                    width: auto;
+                }
 
                 &::before,
                 &::after {
@@ -380,11 +394,16 @@
 
                 color: white;
                 text-align: center;
-
+                //changed img padding-inline to a padding inline
                 padding-inline: 5%;
 
+                //addded text-wrap 25.7.5
+                .title {
+                    text-wrap: balance;
+                }
+
                 img {
-                    
+                    // padding-inline: 10%;
                     padding-block: 20%;
                 }
 
@@ -399,11 +418,12 @@
 
     .slide-items .slick-slide {
         box-sizing: border-box;
-        img{
+
+        img {
             object-fit: cover;
         }
     }
-    
+
     .more-btn {
         margin-block: 30px;
         //右よせ
@@ -445,8 +465,8 @@
         }
 
         &:hover {
-                transform: scale( 1.1, 1.1 );
-            }
+            transform: scale(1.1, 1.1);
+        }
     }
 
 }
