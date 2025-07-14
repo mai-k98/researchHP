@@ -206,7 +206,8 @@ header nav .sns {
 @media screen and (max-width: 480px) {
   header nav .sns {
     gap: 10px;
-    bottom: 0%;
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }
 header nav .sns li {
@@ -708,6 +709,16 @@ header .hamburger-btn span:nth-child(2) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+@media screen and (max-width: 820px) {
+  #news-page .news-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  #news-page .news-articles {
+    grid-template-columns: 1fr;
+  }
 }
 #news-page .news-articles .article {
   background-color: white;
