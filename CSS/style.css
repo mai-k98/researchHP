@@ -216,15 +216,18 @@ header nav .menu .about:hover .about-labmember, header nav .menu .about:hover .a
   visibility: visible;
 }
 header nav .sns {
-  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 @media screen and (max-width: 480px) {
   header nav .sns {
-    margin-top: 20px;
     gap: 10px;
+    bottom: 0%;
   }
 }
 header nav .sns li {
