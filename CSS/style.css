@@ -99,7 +99,6 @@ img {
 @media screen and (max-width: 480px) {
   .nav-menu-jp {
     font-size: 15px;
-    overflow-y: auto;
   }
 }
 
@@ -193,12 +192,12 @@ header nav {
 header nav .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
 }
 @media screen and (max-width: 480px) {
   header nav .menu {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 5px;
   }
 }
 header nav .menu li {
@@ -220,7 +219,7 @@ header nav .sns {
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 @media screen and (max-width: 480px) {
   header nav .sns {
