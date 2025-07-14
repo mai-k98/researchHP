@@ -431,7 +431,7 @@ header .hamburger-btn span:nth-child(2) {
 }
 #research .research-text {
   max-width: 600px;
-  height: 750px;
+  height: 600px;
   background-color: rgba(181, 178, 178, 0.5294117647);
   position: relative;
 }
@@ -448,6 +448,11 @@ header .hamburger-btn span:nth-child(2) {
   border: solid 2px #ffffff;
   color: #ffffff;
   font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  #research .research-text .learn-more {
+    right: 30%;
+  }
 }
 @media screen and (max-width: 480px) {
   #research .research-text .learn-more {
@@ -695,15 +700,12 @@ header .hamburger-btn span:nth-child(2) {
 }
 
 #labmembers {
-  margin-top: 150px;
+  margin-bottom: 100px;
 }
 #labmembers .member {
   padding-block: 50px;
 }
 
-#news-page {
-  margin-top: 150px;
-}
 #news-page .news-articles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -789,13 +791,43 @@ header .hamburger-btn span:nth-child(2) {
   padding: 30px;
 }
 #news-page .news-post .post-title {
-  font-size: 48px;
+  font-size: 40px;
+}
+@media screen and (max-width: 820px) {
+  #news-page .news-post .post-title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #news-page .news-post .post-title {
+    font-size: 25px;
+  }
 }
 #news-page .news-post .post-date {
-  font-size: 36px;
+  font-size: 30px;
+}
+@media screen and (max-width: 820px) {
+  #news-page .news-post .post-date {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #news-page .news-post .post-date {
+    font-size: 20px;
+  }
 }
 #news-page .news-post .post-detail {
-  font-size: 24px;
+  font-size: 20px;
+}
+@media screen and (max-width: 820px) {
+  #news-page .news-post .post-detail {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #news-page .news-post .post-detail {
+    font-size: 16px;
+  }
 }
 
 .post-thumb {
@@ -804,8 +836,7 @@ header .hamburger-btn span:nth-child(2) {
 }
 
 #research-page {
-  margin-top: 150px;
-  height: 100vh;
+  margin-bottom: 100px;
 }
 #research-page .research-text {
   margin-top: 100px;
@@ -814,9 +845,6 @@ header .hamburger-btn span:nth-child(2) {
   font-size: 24px;
 }
 
-#publication-page {
-  margin-top: 150px;
-}
 #publication-page .publication-articles {
   display: flex;
   flex-direction: column;
@@ -831,13 +859,13 @@ header .hamburger-btn span:nth-child(2) {
   display: flex;
   width: 100%;
   height: auto;
-  gap: 50px;
   padding-inline: 20px;
   color: white;
 }
 #publication-page .publication-articles .article a img {
   width: 30%;
-  padding: 20px;
+  padding-block: 20px;
+  padding-right: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -850,11 +878,17 @@ header .hamburger-btn span:nth-child(2) {
   font-size: 24px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+  #publication-page .publication-articles .article a .article-text .article-title,
+#publication-page .publication-articles .article a .article-text .date {
+    font-size: 16px;
+  }
+}
 #publication-page .page-btn {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-block: 30px;
+  margin-bottom: 30px;
 }
 #publication-page .page-btn .previous,
 #publication-page .page-btn .top,
@@ -874,8 +908,6 @@ header .hamburger-btn span:nth-child(2) {
   border-bottom: solid 2px gray;
 }
 #publication-page .publication-post {
-  max-width: 1000px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -884,12 +916,42 @@ header .hamburger-btn span:nth-child(2) {
   padding: 30px;
 }
 #publication-page .publication-post .post-title {
-  font-size: 48px;
+  font-size: 40px;
+}
+@media screen and (max-width: 820px) {
+  #publication-page .publication-post .post-title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #publication-page .publication-post .post-title {
+    font-size: 25px;
+  }
 }
 #publication-page .publication-post .post-date {
-  font-size: 36px;
+  font-size: 30px;
+}
+@media screen and (max-width: 820px) {
+  #publication-page .publication-post .post-date {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #publication-page .publication-post .post-date {
+    font-size: 20px;
+  }
 }
 #publication-page .publication-post .post-detail {
-  font-size: 24px;
+  font-size: 20px;
+}
+@media screen and (max-width: 820px) {
+  #publication-page .publication-post .post-detail {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #publication-page .publication-post .post-detail {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
