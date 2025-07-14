@@ -55,6 +55,7 @@ header {
 
             @include m.sp {
                 grid-template-columns: 1fr;
+                gap: 10px;
             }
 
 
@@ -92,9 +93,16 @@ header {
             display: flex;
             justify-content: center;
             gap: 50px;
+            @include m.sp{
+                margin-top: 20px;
+                gap: 10px;
+            }
 
             li {
                 width: 80px;
+                @include m.sp{
+                    width: 50px;
+                }
 
                 img {
                     width: 100%;
