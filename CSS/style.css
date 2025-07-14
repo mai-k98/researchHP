@@ -113,7 +113,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .nav-menu-en {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -154,19 +154,10 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  padding-right: 50px;
   display: flex;
   justify-content: space-between;
   height: 120px;
   align-items: center;
-}
-header::after {
-  position: fixed;
-  z-index: 100;
-  content: "";
-  width: 100%;
-  height: 120px;
-  background-color: rgba(23, 21, 21, 0.7019607843);
 }
 header h1 {
   position: relative;
@@ -181,10 +172,10 @@ header nav {
   background-color: #363e45;
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 150px;
-  padding-inline: 100px;
+  padding-top: 120px;
   transition: all 0.5s;
   visibility: hidden;
   opacity: 0;
@@ -193,6 +184,7 @@ header nav .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  margin-bottom: 5%;
 }
 @media screen and (max-width: 480px) {
   header nav .menu {
@@ -202,24 +194,12 @@ header nav .menu {
 }
 header nav .menu li {
   align-items: center;
+  padding-left: 20px;
 }
 header nav .menu li a {
   color: white;
 }
-header nav .menu .about .about-labmember,
-header nav .menu .about .about-research {
-  opacity: 0;
-  visibility: hidden;
-}
-header nav .menu .about:hover .about-labmember, header nav .menu .about:hover .about-research {
-  opacity: 1;
-  visibility: visible;
-}
 header nav .sns {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -245,6 +225,7 @@ header .hamburger-btn {
   width: 60px;
   height: 60px;
   position: relative;
+  right: 20px;
   cursor: pointer;
   z-index: 200;
 }
