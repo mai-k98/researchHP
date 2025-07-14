@@ -51,11 +51,12 @@ header {
         .menu {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 30px;
 
             @include m.sp {
                 grid-template-columns: 1fr;
-                gap: 10px;
+                //changed 25.7.14
+                gap: 5px;
             }
 
 
@@ -92,7 +93,9 @@ header {
             margin-top: 100px;
             display: flex;
             justify-content: center;
-            gap: 50px;
+            //changed 25.7.14
+            gap: 30px;
+
             @include m.sp{
                 margin-top: 20px;
                 gap: 10px;
@@ -100,6 +103,7 @@ header {
 
             li {
                 width: 80px;
+                //added 25.7.14
                 @include m.sp{
                     width: 50px;
                 }
