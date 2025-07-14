@@ -90,21 +90,30 @@ header {
         }
 
         .sns {
-            margin-top: 100px;
+            //delete 25.7.14
+            // margin-top: 100px;
+            //added 25.7.14
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translateX(-50%); // 横方向だけ中央揃え
+
             display: flex;
             justify-content: center;
             //changed 25.7.14
             gap: 30px;
 
-            @include m.sp{
-                margin-top: 20px;
+            @include m.sp {
+                // margin-top: 20px;
                 gap: 10px;
+                bottom: 0%;
             }
 
             li {
                 width: 80px;
+
                 //added 25.7.14
-                @include m.sp{
+                @include m.sp {
                     width: 50px;
                 }
 
