@@ -1,20 +1,22 @@
 @use "mixin" as m;
 
 #news-page {
-    margin-top: 150px;
+    // margin-top: 150px;
 
     .news-articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
-        @include m.tab{
+
+        @include m.tab {
             grid-template-columns: 1fr 1fr;
         }
-        @include m.sp{
+
+        @include m.sp {
             grid-template-columns: 1fr;
         }
 
-        
+
         .article {
             background-color: white;
             width: auto;
@@ -30,8 +32,6 @@
                     margin-block: 5px;
                 }
 
-
-
                 .article-title,
                 .date {
                     font-size: 24px;
@@ -42,12 +42,7 @@
                     font-size: 16px;
                 }
             }
-
-
         }
-
-
-
     }
 
 
@@ -116,15 +111,39 @@
         }
 
         .post-title {
-            font-size: 48px;
+            font-size: 40px;
+
+            @include m.tab {
+                font-size: 35px;
+            }
+
+            @include m.sp {
+                font-size: 25px;
+            }
         }
 
         .post-date {
-            font-size: 36px;
+            font-size: 30px;
+
+            @include m.tab {
+                font-size: 25px;
+            }
+
+            @include m.sp {
+                font-size: 20px;
+            }
         }
 
         .post-detail {
-            font-size: 24px;
+            font-size: 20px;
+
+            @include m.tab {
+                font-size: 16px;
+            }
+
+            @include m.sp {
+                font-size: 16px;
+            }
         }
 
     }
