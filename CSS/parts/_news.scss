@@ -29,13 +29,12 @@
                 color: black;
 
                 img {
-                    margin-block: 5px;
+                    margin: 10px;
                 }
 
                 .article-title,
                 .date {
-                    font-size: 24px;
-                    margin-bottom: 10px;
+                    font-size: 20px;
                 }
 
                 .text {
@@ -99,8 +98,8 @@
     }
 
     .news-post {
-        max-width: 1000px;
-        margin: 0 auto;
+        // max-width: 1000px;
+        // margin: 0 auto;
 
         display: flex;
         flex-direction: column;
