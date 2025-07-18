@@ -1,7 +1,6 @@
 @use "mixin" as m;
 
 #news-page {
-    // margin-top: 150px;
 
     .news-articles {
         display: grid;
@@ -16,29 +15,33 @@
             grid-template-columns: 1fr;
         }
 
-
         .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
             background-color: white;
             width: auto;
-            height: 419px;
-            padding-inline: 20px;
+
             margin-bottom: 10px;
             box-shadow: 0px 0px 5px 5px rgba(17, 17, 26, 0.157);
 
             a {
                 color: black;
+                margin: 20px;
 
                 img {
-                    margin: 10px;
+                     margin-bottom: 10px;
                 }
 
-                .article-title,
-                .date {
-                    font-size: 20px;
-                }
-
-                .text {
+                .article-title {
                     font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .date, .text {
+                    font-size: 14px;
                 }
             }
         }
@@ -98,8 +101,6 @@
     }
 
     .news-post {
-        // max-width: 1000px;
-        // margin: 0 auto;
 
         display: flex;
         flex-direction: column;
