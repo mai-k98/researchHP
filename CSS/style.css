@@ -733,12 +733,11 @@ header .hamburger-btn span:nth-child(2) {
   color: black;
 }
 #news-page .news-articles .article a img {
-  margin-block: 5px;
+  margin: 10px;
 }
 #news-page .news-articles .article a .article-title,
 #news-page .news-articles .article a .date {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
 #news-page .news-articles .article a .text {
   font-size: 16px;
@@ -781,8 +780,6 @@ header .hamburger-btn span:nth-child(2) {
   border-bottom: solid 2px gray;
 }
 #news-page .news-post {
-  max-width: 1000px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
