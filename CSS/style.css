@@ -722,25 +722,28 @@ header .hamburger-btn span:nth-child(2) {
   }
 }
 #news-page .news-articles .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
   width: auto;
-  height: 419px;
-  padding-inline: 20px;
   margin-bottom: 10px;
   box-shadow: 0px 0px 5px 5px rgba(17, 17, 26, 0.157);
 }
 #news-page .news-articles .article a {
   color: black;
+  margin: 20px;
 }
 #news-page .news-articles .article a img {
-  margin: 10px;
+  margin-bottom: 10px;
 }
-#news-page .news-articles .article a .article-title,
-#news-page .news-articles .article a .date {
-  font-size: 20px;
-}
-#news-page .news-articles .article a .text {
+#news-page .news-articles .article a .article-title {
   font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#news-page .news-articles .article a .date, #news-page .news-articles .article a .text {
+  font-size: 14px;
 }
 #news-page .page-btn {
   display: flex;
