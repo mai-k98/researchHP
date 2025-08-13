@@ -562,6 +562,12 @@ header .hamburger-btn span:nth-child(2) {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 480px) {
+  #publication .slide-items {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 #publication .slide-items li a {
   background-color: rgba(245, 245, 245, 0.5);
   display: block;
