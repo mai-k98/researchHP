@@ -12,7 +12,9 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .section-title {
@@ -23,7 +25,8 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding-inline: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .btitle-english {
@@ -493,6 +496,8 @@ header .hamburger-btn span:nth-child(2) {
   justify-content: space-around;
 }
 #about .abouts .about-text {
+  max-width: 100%;
+  box-sizing: border-box;
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -554,12 +559,8 @@ header .hamburger-btn span:nth-child(2) {
 #publication .slide-items {
   width: 100%;
   height: 100%;
-}
-#publication .slide-items li {
-  margin-right: 100px;
-}
-#publication .slide-items li:last-child {
-  margin-right: 0;
+  display: flex;
+  gap: 20px;
 }
 #publication .slide-items li a {
   background-color: rgba(245, 245, 245, 0.5);
