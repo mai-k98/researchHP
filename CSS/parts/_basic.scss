@@ -14,7 +14,10 @@ a {
 }
 
 img {
-    width: 100%;
+    //added height and display on 25.8
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .section-title {
@@ -24,9 +27,11 @@ img {
 }
 
 .wrapper {
+    //added max-width on 25.8
     max-width: 1200px;
     margin: 0 auto;
-    padding-inline: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 
