@@ -10,9 +10,9 @@
         max-width: 100%;
         height: 90vh;
 
-        // @include m.sp {
-        //     height: 70vh;
-        // }
+        @include m.sp {
+            height: 70vh;
+        }
 
 
     }
@@ -299,6 +299,10 @@
         justify-content: space-around;
 
         .about-text {
+            //added 25.8
+            max-width: 100%;
+            box-sizing: border-box;
+
             margin-top: 200px;
             display: flex;
             justify-content: center;
@@ -379,13 +383,21 @@
     .slide-items {
         width: 100%;
         height: 100%;
+        display: flex;
+        gap: 20px;
 
+        @include m.sp{
+            flex-direction: column;
+            gap: 40px;
+        }
+        
         li {
-            margin-right: 100px;
+            //25.8変更
+            // margin-right: 100px;
 
-            &:last-child {
-                margin-right: 0;
-            }
+            // &:last-child {
+            //     margin-right: 0;
+            // }
 
 
             a {
