@@ -276,6 +276,11 @@ header .hamburger-btn span:nth-child(2) {
   max-width: 100%;
   height: 90vh;
 }
+@media screen and (max-width: 480px) {
+  #mainvisual img {
+    height: 70vh;
+  }
+}
 #mainvisual .learn-more {
   display: flex;
   justify-content: center;
