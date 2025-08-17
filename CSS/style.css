@@ -1,6 +1,8 @@
 body {
   color: black;
   background-color: #f6fbff;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -12,7 +14,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -287,8 +289,8 @@ header .hamburger-btn span:nth-child(2) {
   align-items: center;
   transition: all 0.5s;
   position: absolute;
-  top: 800px;
-  right: 300px;
+  top: 65%;
+  right: 15%;
   width: 250px;
   height: 55px;
   border: solid 2px #ffffff;
