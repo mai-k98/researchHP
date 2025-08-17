@@ -3,6 +3,9 @@
 body {
     color: black;
     background-color: #f6fbff;
+    //added 25.8.17
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -15,7 +18,7 @@ a {
 
 img {
     //added height and display on 25.8
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
